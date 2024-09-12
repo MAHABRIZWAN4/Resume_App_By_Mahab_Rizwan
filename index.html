@@ -1,0 +1,90 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahab’s Professional Resumes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.ts"></script>
+</head>
+<body>
+    <h1>Mahab’s Professional Resumes</h1>
+    <form id="resumeForm">
+
+        <!-- -------------------------Personal Infromation----------------------------- -->
+       <fieldset>
+        <legend>Personal Information</legend>
+
+        <!-- -------------------------Username----------------------------- -->
+        <label for="username">Resume URL: </label>
+        <input type="text" id="username" name="username" required><br/>
+
+
+
+
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
+
+        <label for="phone">Phone: </label>
+        <input type="number" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+
+        <!-- -------------------------Profile Picture----------------------------- -->
+        <label for="profilePicture">Profile Picture </label>
+        <input type="file" id="profilePicture" name="profilePicture"  accept="image/*" required>      
+       </fieldset>
+        <!-- -------------------------Education----------------------------- -->
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education</label>
+        <textarea name="education" id="education" rows="4" required></textarea><br>
+       </fieldset>
+       <!-- -------------------------Experience----------------------------- -->
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience</label>
+        <textarea name="Experience" id="experience" rows="4" required></textarea><br>
+       </fieldset>
+       <!-- -------------------------Skills----------------------------- -->
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills</label>
+        <textarea name="skills" id="skills" rows="4" required></textarea><br>
+       </fieldset>
+       <!-- -------------------------Button-------------------------------- -->
+       <button type="submit"> Generate Resume Below </button>
+    </form>
+   
+   
+    
+  
+    <div id="resumeOutput">
+      <!-- ----------------Resume Will Be Generated Below------------------- -->
+       <script src="script.js"></script>
+       
+    </div>
+
+
+    <script>
+      document.addEventListener('keydown', e => {
+        const inputs = Array.from(e.target.closest('form').querySelectorAll('input'));
+        const currentIndex = inputs.indexOf(e.target);
+    
+        if (e.key === 'Enter' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          const nextInput = inputs[currentIndex + 1];
+          if (nextInput) nextInput.focus();
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prevInput = inputs[currentIndex - 1];
+          if (prevInput) prevInput.focus();
+        }
+      });
+    </script>
+  
+
+  </body>
+</html>

@@ -1,0 +1,109 @@
+/* *********************style for body********************* */
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(246, 101, 149);
+}
+/* *********************style for h1********************* */
+h1 {
+  text-align: center;
+  color: rgba(9, 9, 245, 0.877);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 45px;
+}
+/* **************************form************************* */
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #c2dffd;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(9, 9, 245, 0.877);
+  padding: 20px;
+}
+/* **************************fieldset************************* */
+fieldset {
+  border: 2px solid rgb(117, 117, 245);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: lightblue;
+}
+/* **************************legend************************* */
+legend {
+  font-weight: bold;
+  text-align: left;
+  color: #54075d;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* **************************legend************************* */
+label {
+  display: block;
+  margin-top: 10px;
+  color: #510c66;
+  font-size: 18px;
+}
+/* **********************input,textarea********************** */
+input,
+textarea {
+  width: calc(100% - 1px);
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #3498bd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+/* **************************button************************* */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(21, 209, 234);
+  color: rgb(5, 11, 129);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button:hover {
+  font-weight: bold;
+  background-color: #75baeb;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* ************************Resume Output********************** */
+#resumeOutput {
+  border-radius: 20px;
+  border: 2px solid blue;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 25px;
+  padding: 20px;
+  background-color: rgb(246, 165, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #160bdf;
+  font-size: 20px;
+}
+#resumeOutput h2 {
+  color: rgb(112, 4, 112);
+  text-align: center;
+  font-size: 40px;
+}
+
+/* ************************Profile Picture********************** */
+.profilePicture {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3492bd;
+  box-shadow: 0 4px 8px rgba(11, 7, 211, 0.5);
+  border-radius: 500%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
